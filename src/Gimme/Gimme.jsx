@@ -28,7 +28,7 @@ function Gimme() {
                         style={{
                             width: 200
                         }}
-                        src={`/images/horse_pics/${Math.floor(Math.random() * 26)}.jpg`}
+                        src={`/images/horse_pics/${Math.floor(Math.random() * 27)}.jpg`}
                     />
                 </Box>
             </Modal>
