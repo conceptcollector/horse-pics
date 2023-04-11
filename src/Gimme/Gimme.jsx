@@ -23,10 +23,6 @@ function Gimme() {
             <Modal
                 open={open}
                 onClose={handleClose}
-                // slides={[
-                //     {src: `/images/horse_pics/${Math.floor(Math.random() * 26)}`}
-                //     // {`/images/horse_pics/${Math.floor(Math.random() * 24)}`}
-                // ]}
             >
                 <Box>
                     <img
@@ -38,13 +34,6 @@ function Gimme() {
                 </Box>
             </Modal>
         </>
-                // return (
-                //     console.log(`/images/horse_pics/${Math.floor(Math.random() * 26)}`),
-                //     <ModalImage
-                //         medium={`/images/horse_pics/${Math.floor(Math.random() * 24)}`}
-                //         alt='A horse pic'
-                //     />
-                // )
     )
 
 }
