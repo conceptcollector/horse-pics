@@ -23,7 +23,9 @@ function Gimme() {
                 open={open}
                 onClose={handleClose}
             >
-                <Box>
+                <Box
+                    className='horse-pic'
+                >
                     <img
                         style={{
                             width: 200
