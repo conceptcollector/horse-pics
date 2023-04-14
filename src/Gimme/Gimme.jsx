@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Box, Modal } from '@mui/material';
+import { Box, Button, Modal } from '@mui/material';
 
 function Gimme() {
 
@@ -32,6 +32,11 @@ function Gimme() {
                         }}
                         src={`/images/horse_pics/${Math.floor(Math.random() * 27)}.jpg`}
                     />
+                    <Button
+                        onClick={handleClose}
+                    >
+                        Close
+                    </Button>
                 </Box>
             </Modal>
         </>
