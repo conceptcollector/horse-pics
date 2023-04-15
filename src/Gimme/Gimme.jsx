@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Box, Button, Modal } from '@mui/material';
+import { Button, Card, CardActions, CardContent, Modal } from '@mui/material';
 
 function Gimme() {
 
@@ -23,21 +23,30 @@ function Gimme() {
                 open={open}
                 onClose={handleClose}
             >
-                <Box
-                    className='horse-pic'
+                <Card
+                    className={{
+                        
+                    }}
+                    style={{
+                        width: 200
+                    }}
                 >
-                    <img
-                        style={{
-                            width: 200
-                        }}
-                        src={`/images/horse_pics/${Math.floor(Math.random() * 27)}.jpg`}
-                    />
-                    <Button
-                        onClick={handleClose}
-                    >
-                        Close
-                    </Button>
-                </Box>
+                    <CardContent>
+                        <img
+                            style={{
+                                width: 200
+                            }}
+                            src={`/images/horse_pics/${Math.floor(Math.random() * 27)}.jpg`}
+                        />
+                    </CardContent>
+                    <CardActions>
+                        <Button
+                            onClick={handleClose}
+                        >
+                            Close
+                        </Button>
+                    </CardActions>
+                </Card>
             </Modal>
         </>
     )
