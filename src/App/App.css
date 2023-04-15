@@ -32,13 +32,6 @@ html {
   color: #61dafb;
 }
 
-/* .horse-pic {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
