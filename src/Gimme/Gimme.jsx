@@ -28,20 +28,23 @@ function Gimme() {
                         position: 'absolute',
                         top: '50%',
                         left: '50%',
-                        transform: 'translate(-50%, -50%)',
-                        width: 200
+                        transform: 'translate(-50%, -50%)'
                     }}
                 >
                     <CardContent>
                         <img
                             style={{
-                                width: 200
+                                width: 200,
+                                margin: 'auto'
                             }}
                             src={`/images/horse_pics/${Math.floor(Math.random() * 27)}.jpg`}
                         />
                     </CardContent>
                     <CardActions>
                         <Button
+                            style={{
+                                margin: 'auto'
+                            }}
                             onClick={handleClose}
                         >
                             Close
