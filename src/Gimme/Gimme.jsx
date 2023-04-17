@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
+import { Button, Card, CardActions, CardContent, Modal } from '@mui/material';
 
 function Gimme() {
 
@@ -23,28 +22,37 @@ function Gimme() {
             <Modal
                 open={open}
                 onClose={handleClose}
-                // slides={[
-                //     {src: `/images/horse_pics/${Math.floor(Math.random() * 26)}`}
-                //     // {`/images/horse_pics/${Math.floor(Math.random() * 24)}`}
-                // ]}
             >
-                <Box>
-                    <img
-                        style={{
-                            width: 200
-                        }}
-                        src={`/images/horse_pics/${Math.floor(Math.random() * 26)}.jpg`}
-                    />
-                </Box>
+                <Card
+                    style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)'
+                    }}
+                >
+                    <CardContent>
+                        <img
+                            style={{
+                                width: 200,
+                                margin: 'auto'
+                            }}
+                            src={`/images/horse_pics/${Math.floor(Math.random() * 27)}.jpg`}
+                        />
+                    </CardContent>
+                    <CardActions>
+                        <Button
+                            style={{
+                                margin: 'auto'
+                            }}
+                            onClick={handleClose}
+                        >
+                            Close
+                        </Button>
+                    </CardActions>
+                </Card>
             </Modal>
         </>
-                // return (
-                //     console.log(`/images/horse_pics/${Math.floor(Math.random() * 26)}`),
-                //     <ModalImage
-                //         medium={`/images/horse_pics/${Math.floor(Math.random() * 24)}`}
-                //         alt='A horse pic'
-                //     />
-                // )
     )
 
 }
