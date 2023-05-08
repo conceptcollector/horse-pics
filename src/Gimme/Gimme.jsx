@@ -12,7 +12,7 @@ function Gimme() {
         <>
             <input
                 type="image"
-                src="/images/Henry's_horse_pics.jpg"
+                src="/images/zebrowski.jpg"
                 style={{
                     width: 100
                 }}
