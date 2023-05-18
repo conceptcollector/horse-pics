@@ -15,6 +15,7 @@ function Gimme() {
         <>
             <input
                 type="image"
+// this image was created by u/FluorescentHorror on Reddit and is used with their blessing
                 src="/images/Henry_Horse_Pics.jpg"
                 style={{
                     width: 100
