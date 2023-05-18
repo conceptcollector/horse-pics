@@ -1,10 +1,13 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { Button, Card, CardActions, CardContent, Modal } from '@mui/material';
 
 function Gimme() {
 
-    const [open, setOpen] = useState(false);
+    const [ open, setOpen ] = useState(false);
+    const dispatch = useDispatch();
+
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     
@@ -12,11 +15,16 @@ function Gimme() {
         <>
             <input
                 type="image"
-                src="/images/Henry's_horse_pics.jpg"
+                src="/images/Henry_Horse_Pics.jpg"
                 style={{
                     width: 100
                 }}
-                onClick={handleOpen}
+                onClick={
+                    handleOpen;
+                    dispatch({
+                        type: 'FETCH_HORSE_PIC'
+                    })
+                }
             />
 
             <Modal
