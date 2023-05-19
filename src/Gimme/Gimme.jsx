@@ -23,7 +23,8 @@ function Gimme() {
                 onClick={
                     handleOpen;
                     dispatch({
-                        type: 'FETCH_HORSE_PIC'
+                        type: 'FETCH_HORSE_PIC',
+                        payload: {${Math.floor(Math.random() * 27)}}
                     })
                 }
             />
@@ -46,7 +47,7 @@ function Gimme() {
                                 width: 200,
                                 margin: 'auto'
                             }}
-                            src={`/images/horse_pics/${Math.floor(Math.random() * 27)}.jpg`}
+                            // src={`/images/horse_pics/${Math.floor(Math.random() * 26)}.jpg`}
                         />
                     </CardContent>
                     <CardActions>
