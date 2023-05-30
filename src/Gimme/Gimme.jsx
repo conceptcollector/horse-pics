@@ -24,7 +24,7 @@ function Gimme() {
                     handleOpen;
                     dispatch({
                         type: 'FETCH_HORSE_PIC',
-                        payload: {${Math.floor(Math.random() * 27)}}
+                        payload: {${Math.floor(Math.random() * 26)}}
                     })
                 }
             />
