@@ -5,6 +5,12 @@ import { Button, Card, CardActions, CardContent, Modal } from '@mui/material';
 
 function Gimme() {
 
+    useEffect(() => {
+        dispatch({
+            type: 'FETCH_HORSE_PICS'
+        })
+    })
+
     const [ open, setOpen ] = useState(false);
     const dispatch = useDispatch();
 
@@ -21,11 +27,11 @@ function Gimme() {
                     width: 100
                 }}
                 onClick={
-                    handleOpen;
-                    dispatch({
-                        type: 'FETCH_HORSE_PIC',
-                        payload: {${Math.floor(Math.random() * 26)}}
-                    })
+                    handleOpen
+                    // dispatch({
+                    //     type: 'FETCH_HORSE_PIC',
+                    //     payload: {${Math.floor(Math.random() * 26)}}
+                    // })
                 }
             />
 

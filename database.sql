@@ -1,6 +1,6 @@
 CREATE TABLE horse_pic (
     id SERIAL PRIMARY KEY,
-    image VARCHAR(410) NOT NULL,
+    image VARCHAR(420) NOT NULL,
     comments TEXT
 )
 
@@ -32,3 +32,16 @@ VALUES
 ('images/horse_pics/Sam_Elliott_horse.jpg'),
 ('images/horse_pics/Secretariat_present_day.jpg'),
 ('images/horse_pics/Secretariat.jpg');
+
+CREATE TABLE index (
+    id SERIAL PRIMARY KEY,
+    topic VARCHAR(420) NOT NULL,
+    podcast VARCHAR(420) NOT NULL,
+    episode VARCHAR(420) NOT NULL,
+    comments TEXT
+)
+
+INSERT INTO index (topic, podcast, episode, comments)
+VALUES
+('Search and Destroy', 'The Roundtable of Gentlemen', 'Episode 1: It Begins',
+'Intro song. Performed by The Stooges. David Bowie mix.')
